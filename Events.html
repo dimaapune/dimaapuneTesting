@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="CSS/Events.css">
+    <!-- Favicon -->
+    <link rel="icon" href="logo/favicon.png" type="image/png">
+    <title>Events - Dai-Ichi Martial Arts Karate Academy</title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="logo/1.jpg" alt="Logo" />
+            </div>
+
+            <div class="academy-name">
+                <h1>DAI-ICHI MARTIAL ARTS</h1>
+                <p>KARATE ACADEMY</p>
+            </div>
+
+            <div class="logo">
+                <img src="logo/2.jpg" alt="Logo" />
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="About.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="Team.html" class="nav-link">Our Team</a></li>
+                <li class="nav-item"><a href="Images.html" class="nav-link">Images</a></li>
+                <li class="nav-item"><a href="Events.html" class="nav-link active">Events</a></li>
+                <li class="nav-item"><a href="Contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Title -->
+            <section class="hero">
+                <h2>Upcoming Events & Tournaments</h2>
+                <p>Join us for exciting martial arts events, competitions, and special training sessions throughout the year.</p>
+            </section>
+
+            <!-- Events Filter -->
+                <!-- <div class="events-filter">
+                    <button class="filter-btn active" data-filter="all">All Events</button>
+                    <button class="filter-btn" data-filter="tournament">Tournaments</button>
+                    <button class="filter-btn" data-filter="workshop">Workshops</button>
+                    <button class="filter-btn" data-filter="seminar">Seminars</button>
+                    <button class="filter-btn" data-filter="grading">Grading</button>
+                </div> -->
+
+            <!-- Events Grid -->
+            <section class="events-grid" id="eventsGrid">
+                <!-- Event 1 -->
+                <div class="event-card" data-category="tournament">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month-year">MAR 2025</span>
+                        <div class="event-status status-registration">Registration Open</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">State Level Karate Championship</h3>
+                        <span class="event-category">Tournament</span>
+                        <p class="event-description">Annual state-level karate championship featuring multiple
+                            categories for all age groups and belt levels.</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <span class="event-detail-icon">⏰</span>
+                                <span>9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="event-detail-icon">📍</span>
+                                <span>Sports Complex, Pune</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="event-detail-icon">👥</span>
+                                <span>All Age Groups</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <a href="#" class="event-btn">Register Now</a>
+                            <div class="event-price">₹500</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-card" data-category="workshop">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month-year">MAR 2025</span>
+                        <div class="event-status status-upcoming">Upcoming</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Advanced Kata Workshop</h3>
+                        <span class="event-category">Workshop</span>
+                        <p class="event-description">Specialized workshop focusing on advanced kata techniques and
+                            applications with guest instructor.</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <span class="event-detail-icon">⏰</span>
+                                <span>10:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="event-detail-icon">📍</span>
+                                <span>Academy Dojo</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="event-detail-icon">🥋</span>
+                                <span>Brown & Black Belts</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <a href="#" class="event-btn">Learn More</a>
+                            <div class="event-price">₹800</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event-card" data-category="seminar">
+                    <div class="event-date">
+                        <span class="day">05</span>
+                        <span class="month-year">APR 2025</span>
+                        <div class="event-status status-upcoming">Upcoming</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Self-Defense Seminar</h3>
+                        <span class="event-category">Seminar</span>
+                        <p class="event-description">Essential self-defense techniques for real-world situations. Open
+                            to everyone, including beginners.</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <span class="event-detail-icon">⏰</span>
+                                <span>11:00 AM - 1:00 PM</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="event-detail-icon">📍</span>
+                                <span>Community Center</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="event-detail-icon">👥</span>
+                                <span>All Levels Welcome</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <a href="#" class="event-btn">Register</a>
+                            <div class="event-price">Free</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="event-card" data-category="grading">
+                    <div class="event-date">
+                        <span class="day">12</span>
+                        <span class="month-year">APR 2025</span>
+                        <div class="event-status status-upcoming">Upcoming</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Belt Grading Examination</h3>
+                        <span class="event-category">Grading</span>
+                        <p class="event-description">Quarterly belt grading examination for students ready to advance to
+                            the next level.</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <span class="event-detail-icon">⏰</span>
+                                <span>9:00 AM - 12:00 PM</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="event-detail-icon">📍</span>
+                                <span>Academy Dojo</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="event-detail-icon">📋</span>
+                                <span>Pre-registration Required</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <a href="#" class="event-btn">Apply for Grading</a>
+                            <div class="event-price">₹300</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 5 -->
+                <div class="event-card" data-category="tournament">
+                    <div class="event-date">
+                        <span class="day">28</span>
+                        <span class="month-year">APR 2025</span>
+                        <div class="event-status status-upcoming">Upcoming</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Inter-Academy Kumite Championship</h3>
+                        <span class="event-category">Tournament</span>
+                        <p class="event-description">Competitive kumite tournament between multiple martial arts
+                            academies across the region.</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <span class="event-detail-icon">⏰</span>
+                                <span>8:00 AM - 7:00 PM</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="event-detail-icon">📍</span>
+                                <span>District Sports Arena</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="event-detail-icon">🏆</span>
+                                <span>Competitive Level</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <a href="#" class="event-btn">View Details</a>
+                            <div class="event-price">₹600</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 6 -->
+                <div class="event-card" data-category="workshop">
+                    <div class="event-date">
+                        <span class="day">10</span>
+                        <span class="month-year">MAY 2025</span>
+                        <div class="event-status status-upcoming">Upcoming</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Youth Karate Camp</h3>
+                        <span class="event-category">Workshop</span>
+                        <p class="event-description">3-day intensive karate camp for young martial artists to develop
+                            skills and discipline.</p>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <span class="event-detail-icon">⏰</span>
+                                <span>9:00 AM - 5:00 PM</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="event-detail-icon">📍</span>
+                                <span>Academy Campus</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="event-detail-icon">👶</span>
+                                <span>Ages 8-16</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <a href="#" class="event-btn">Enroll Now</a>
+                            <div class="event-price">₹1200</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Timeline Section -->
+            <!-- <section class="timeline-section">
+                <div class="timeline-title">
+                    <h3>Event Timeline 2025</h3>
+                    <p>Our planned events and activities throughout the year</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">March 2025</div>
+                            <div class="timeline-event">State Championship & Advanced Workshop</div>
+                            <div class="timeline-desc">State-level tournament followed by specialized kata workshop</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">April 2025</div>
+                            <div class="timeline-event">Self-Defense Seminar & Belt Grading</div>
+                            <div class="timeline-desc">Community seminar and quarterly grading examinations</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">May 2025</div>
+                            <div class="timeline-event">Youth Camp & Summer Programs</div>
+                            <div class="timeline-desc">Intensive youth training camp and summer activities</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">June 2025</div>
+                            <div class="timeline-event">National Qualifiers</div>
+                            <div class="timeline-desc">National championship qualifier tournaments</div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <div class="footer-section">
+                            <h4>Welcome to Our Dojo</h4>
+                            <p>Begin your martial arts journey with us. Experience the discipline, fitness, and
+                                philosophy of traditional karate in a supportive environment.</p>
+                        </div>
+                        <div class="footer-section">
+                            <h4>Training Schedule</h4>
+                            <p>Monday - Friday: 6:00 AM - 9:00 PM<br>
+                                Saturday: 8:00 AM - 6:00 PM<br>
+                                Sunday: 10:00 AM - 4:00 PM</p>
+                        </div>
+                        <div class="footer-section">
+                            <h4>Quick Links</h4>
+                            <p><a href="About.html">About Our Academy</a><br>
+                                <a href="Team.html">Meet Our Instructors</a><br>
+                                <a href="Images.html">See Our Images</a><br>
+                                <a href="Events.html">Upcoming Events</a><br>
+                                <a href="Contact.html">Get Started Today</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>🐉 "Fear is the only opponent — conquer it daily." 🥷</p>
+                        <strong>
+                            <p>&copy; 2025 Dai-Ichi Martial Arts Karate Academy. All rights reserved.</p>
+                        </strong>
+
+
+                    </div>
+
+                </div>
+            </footer>
+
+        </div>
+    </main>

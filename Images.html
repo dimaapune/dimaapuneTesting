@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="logo/favicon.png" type="image/png">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="CSS/Images.css">
+    <title>Images - Dai-Ichi Martial Arts Karate Academy</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="logo/1.jpg" alt="Logo" />
+            </div>
+
+            <div class="academy-name">
+                <h1>DAI-ICHI MARTIAL ARTS</h1>
+                <p>KARATE ACADEMY</p>
+            </div>
+
+            <div class="logo">
+                <img src="logo/2.jpg" alt="Logo" />
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="About.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="Team.html" class="nav-link">Our Team</a></li>
+                <li class="nav-item"><a href="Images.html" class="nav-link active">Images</a></li>
+                <li class="nav-item"><a href="Events.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="Contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="images-section">
+            <div class="images-container">
+                <!-- Section Title -->
+                <section class="hero">
+                    <h2>Our Images</h2>
+                    <p>Discover the ancient art of Karate with modern training techniques.</p>
+                    
+                </section>
+
+                <!-- Gallery Categories -->
+                <!-- <div class="gallery-categories">
+                    <button class="category-btn active" onclick="filterImages('all')">All</button>
+                    <button class="category-btn" onclick="filterImages('training')">Training</button>
+                    <button class="category-btn" onclick="filterImages('tournaments')">Tournaments</button>
+                    <button class="category-btn" onclick="filterImages('ceremonies')">Ceremonies</button>
+                    <button class="category-btn" onclick="filterImages('facilities')">Facilities</button>
+                </div> -->
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Training Images -->
+                    <div class="gallery-item" data-category="training">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=250&fit=crop"
+                                alt="Karate Training Session" class="gallery-image">
+                            <div class="image-overlay">
+                                <span class="overlay-icon" onclick="openModal(this)">🔍</span>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Basic Karate Training</h3>
+                            <p class="image-description">Students practicing fundamental karate techniques with proper
+                                form and discipline.</p>
+                            <span class="image-category">Training</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="training">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop"
+                                alt="Advanced Training" class="gallery-image">
+                            <div class="image-overlay">
+                                <span class="overlay-icon" onclick="openModal(this)">🔍</span>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Advanced Techniques</h3>
+                            <p class="image-description">Advanced students perfecting complex martial arts combinations
+                                and movements.</p>
+                            <span class="image-category">Training</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="tournaments">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?w=400&h=250&fit=crop"
+                                alt="Tournament Competition" class="gallery-image">
+                            <div class="image-overlay">
+                                <span class="overlay-icon" onclick="openModal(this)">🔍</span>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Regional Tournament</h3>
+                            <p class="image-description">Our students competing at the regional karate championship with
+                                excellent performance.</p>
+                            <span class="image-category">Tournaments</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="ceremonies">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=250&fit=crop"
+                                alt="Belt Ceremony" class="gallery-image">
+                            <div class="image-overlay">
+                                <span class="overlay-icon" onclick="openModal(this)">🔍</span>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Belt Promotion Ceremony</h3>
+                            <p class="image-description">Celebrating students' achievements as they advance to higher
+                                belt ranks.</p>
+                            <span class="image-category">Ceremonies</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="facilities">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=250&fit=crop"
+                                alt="Dojo Interior" class="gallery-image">
+                            <div class="image-overlay">
+                                <span class="overlay-icon" onclick="openModal(this)">🔍</span>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Main Training Hall</h3>
+                            <p class="image-description">Our spacious and well-equipped training facility with
+                                traditional dojo atmosphere.</p>
+                            <span class="image-category">Facilities</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="training">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=400&h=250&fit=crop"
+                                alt="Kids Training" class="gallery-image">
+                            <div class="image-overlay">
+                                <span class="overlay-icon" onclick="openModal(this)">🔍</span>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Youth Training Program</h3>
+                            <p class="image-description">Young martial artists learning discipline, respect, and
+                                self-defense techniques.</p>
+                            <span class="image-category">Training</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="tournaments">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1594736797933-d0d5a0862d8b?w=400&h=250&fit=crop"
+                                alt="Victory Moment" class="gallery-image">
+                            <div class="image-overlay">
+                                <span class="overlay-icon" onclick="openModal(this)">🔍</span>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Championship Victory</h3>
+                            <p class="image-description">Celebrating our students' outstanding performance in national
+                                competitions.</p>
+                            <span class="image-category">Tournaments</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="facilities">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop"
+                                alt="Equipment Area" class="gallery-image">
+                            <div class="image-overlay">
+                                <span class="overlay-icon" onclick="openModal(this)">🔍</span>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Training Equipment</h3>
+                            <p class="image-description">Professional-grade training equipment and tools for
+                                comprehensive martial arts education.</p>
+                            <span class="image-category">Facilities</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="ceremonies">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=250&fit=crop"
+                                alt="Graduation Ceremony" class="gallery-image">
+                            <div class="image-overlay">
+                                <span class="overlay-icon" onclick="openModal(this)">🔍</span>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <h3 class="image-title">Annual Graduation</h3>
+                            <p class="image-description">Annual ceremony recognizing student achievements and dedication
+                                to martial arts.</p>
+                            <span class="image-category">Ceremonies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Image Viewing -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-image" id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h4>Welcome to Our Dojo</h4>
+                    <p>Begin your martial arts journey with us. Experience the discipline, fitness, and philosophy of
+                        traditional karate in a supportive environment.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Training Schedule</h4>
+                    <p>Monday - Friday: 6:00 AM - 9:00 PM<br>
+                        Saturday: 8:00 AM - 6:00 PM<br>
+                        Sunday: 10:00 AM - 4:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <p><a href="About.html">About Our Academy</a><br>
+                        <a href="Team.html">Meet Our Instructors</a><br>
+                        <a href="Images.html">See Our Images</a><br>
+                        <a href="Events.html">Upcoming Events</a><br>
+                        <a href="Contact.html">Get Started Today</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>🥋 "One kick, a thousand times — that's the path to greatness." 🔁</p>
+                <strong>
+                    <p>&copy; 2025 Dai-Ichi Martial Arts Karate Academy. All rights reserved.</p>
+                </strong>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.getElementById('navMenu');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            const navMenu = document.getElementById('navMenu');
+            const toggleBtn = document.querySelector('.mobile-menu-toggle');
+
+            if (!navMenu.contains(e.target) && !toggleBtn.contains(e.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Gallery filtering functionality
+        function filterImages(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.category-btn');
+
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Filter items
+            items.forEach((item, index) => {
+                if (category === 'all' || item.dataset.category === category) {
+                    setTimeout(() => {
+                        item.style.display = 'block';
+                        setTimeout(() => item.classList.add('show'), 10);
+                    }, index * 100);
+                } else {
+                    item.classList.remove('show');
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+
+        // Modal functionality
+        function openModal(element) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const img = element.closest('.image-container').querySelector('.gallery-image');
+
+            modal.style.display = 'block';
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function (event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Initialize gallery animations
+        document.addEventListener('DOMContentLoaded', function () {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all gallery items
+            document.querySelectorAll('.gallery-item').forEach((item, index) => {
+                setTimeout(() => {
+                    observer.observe(item);
+                }, index * 100);
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(255, 107, 53, 0.95)';
+            } else {
+                navbar.style.background = 'rgba(255, 107, 53, 0.9)';
+            }
+        });
+    </script>
+</body>
+
+</html>
